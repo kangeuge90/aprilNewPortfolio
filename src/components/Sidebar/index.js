@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 // import LogoS from '../../assets/images/logo-s.png'
 // import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope, faFileDownload, faShareSquare } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope, faFileDownload, faShareSquare, faFilePen } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 // import { faYoutube, faSkype } from '@fortawesome/free-brands-svg-icons'
 
@@ -22,14 +22,17 @@ const Sidebar = () => {
                 <NavLink exact='true' activeclassname='active' className='aboutLink' to='/about'>
                     <FontAwesomeIcon icon={faUser} color ="#4d4d4e" />
                 </NavLink>
-                <NavLink exact='true' activeclassname='active' className= 'contactLink' to='/contact'>
+                {/* <NavLink exact='true' activeclassname='active' className= 'contactLink' to='/contact'>
                     <FontAwesomeIcon icon={faEnvelope} color ="#4d4d4e" />
-                </NavLink>
+                </NavLink> */}
                 <NavLink exact='true' activeclassname='active' className= 'projectsLink' to='/projects'>
                     <FontAwesomeIcon icon={faShareSquare} color ="#4d4d4e" />
                 </NavLink>
                 <NavLink exact='true' activeclassname='active' className= 'resumeLink' to='/resume'>
                     <FontAwesomeIcon icon={faFileDownload} color ="#4d4d4e" />
+                </NavLink>
+                <NavLink exact='true' activeclassname='active' className= 'blogLink' to='/blog'>
+                    <FontAwesomeIcon icon={faFilePen} color ="#4d4d4e" />
                 </NavLink>
             </nav>
             <ul>

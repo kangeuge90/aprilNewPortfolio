@@ -29,7 +29,7 @@
         position: absolute;
         height: 210px;
         top: 50%;
-        margin-top: -160px;
+        margin-top: -150px;
         width: 100%;
         a {
             font-size: 22px;
@@ -95,6 +95,12 @@
         a.projectsLink {
             &:after {
                 content: 'PROJECTS';
+                // font-family: 'Helvetica Neue', 'sans-serif';
+            }
+        }
+        a.blogLink {
+            &:after {
+                content: 'BLOG';
                 // font-family: 'Helvetica Neue', 'sans-serif';
             }
         }

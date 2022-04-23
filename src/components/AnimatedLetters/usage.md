@@ -1,0 +1,1 @@
+pass in an array with the letters and the function will animate them

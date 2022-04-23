@@ -1,0 +1,29 @@
+.textAnimate {
+    display: inline-block;
+    opacity: 0;
+    // duration is 1s and delay is 1s
+    animation: bounceIn 1s 1s;
+    // letters stay showing after animation
+    animation-fill-mode: forwards;
+    // width set to make them fit set space
+    min-width: 10px;
+}
+
+// .textAnimateHover {
+//     min-width: 10px;
+//     display: inline-block;
+//     animation-fill-mode: both;
+//     &:hover {
+//         animation: rubberBand 1s;
+//         color: #d4b921;
+//     }
+// }
+// adding for loop to add delay based on index
+@for $i from 1 through 35 {
+    .textAnimate._#{$i} {
+        // animation delay is dividing index by ten, so .1s per index number
+        // animation-delay: #{$i / 10}s;  DEPRECATED IN DART SASS 2.0.0
+        // Apply new format:
+        animation-delay: #{$i / 10}s;
+    }
+}
